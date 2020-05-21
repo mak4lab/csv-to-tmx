@@ -14,12 +14,13 @@ def createTMX(source_file, output_file, srclang, targetlang, adminlang='en', seg
     header = SubElement(root, 'header')
     header.set('creationtool','')
     header.set('creationtoolversion', '')
-    header.set('creationdate', generated_on)
-    header.set('srclang', srclang)
-    header.set('adminlang', adminlang)
-    header.set('o-encoding', oEncoding)
     header.set('segtype', segtype)
+    header.set('o-tmf', '')
+    header.set('adminlang', adminlang)
+    header.set('srclang', srclang)
     header.set('datatype', datatype)
+    header.set('o-encoding', oEncoding)
+
 
     body = SubElement(root, 'body')
 
